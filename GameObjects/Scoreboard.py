@@ -8,7 +8,7 @@ class Scoreboard:
         self.text = ''
 
     def show(self, window, size):
-        self.text = self.font.render(f'{self.score}', True, (255, 255, 255))
+        self.text = self.font.render(f'{self.score}', False, (255, 255, 255))
         window.blit(self.text, (size[0]/2 - 10, size[1]/10))
 
     def increment(self):
